@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<table>
+  <thead>
+    <tr>
+      <th>コード</th>
+      <th>名前</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- fruitsが空でない場合、fruitsの要素をfruitに格納する -->
+    <!-- 要素の数ループする -->
+    <tr th:each="data : ${list}">
+      <td th:text="${data.blogId}">/td>
+      <td th:text="${data.blogTitle}">/td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
