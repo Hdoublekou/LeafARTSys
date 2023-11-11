@@ -25,7 +25,7 @@ public class TopPageController {
 		List<BlogInfoEntity> list = topPageService.findBlogInfoDataList();
 
 		model.addAttribute("list", list);
-
+		System.out.println(789);
 		return mav;
 
 	}
